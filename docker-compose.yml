@@ -1,0 +1,34 @@
+
+services:
+  deepstream:
+    image: nvcr.io/nvidia/deepstream:7.1-gc-triton-devel
+    container_name: deepstream7.1
+    privileged: true
+    network_mode: host
+    #restart: "no"
+
+    # === GPU ===
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: ["gpu"]
+
+    # === ENV VARIABLES ===
+    environment:
+      DISPLAY: ${DISPLAY}
+      CUDA_CACHE_DISABLE: 0
+      NVIDIA_DRIVER_CAPABILITIES: compute,utility,video,graphics
+
+    # === DEVICES ===
+    devices:
+      - "/dev/snd:/dev/snd"
+
+    # === VOLUMES ===
+    volumes:
+      - /tmp/.X11-unix/:/tmp/.X11-unix
+      - ./apps/:/opt/nvidia/deepstream/deepstream-7.1/apps
+
+    # === EQUIVALENTE a docker run -it ===
+    stdin_open: true
+    tty: true
