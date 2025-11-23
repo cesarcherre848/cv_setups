@@ -1,0 +1,2 @@
+[streammux] (nvstreammux — multiplexor por lotes) 
+Es un elemento de DeepStream/GStreamer que toma múltiples flujos de video independientes y los fusiona en un solo “batch” de frames para procesarlos de forma simultánea en GPU
