@@ -1,0 +1,20 @@
+services:
+  tao_pyt:
+    image: nvcr.io/nvidia/tao/tao-toolkit:5.5.0-pyt
+    container_name: tao_pyt5.5
+    runtime: nvidia
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility
+    volumes:
+      - ./apps/:/apps  
+    # === EQUIVALENTE a docker run -it ===
+    stdin_open: true
+    tty: true
