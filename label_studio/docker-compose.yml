@@ -1,0 +1,15 @@
+services:
+  label-studio:
+    image: heartexlabs/label-studio:latest
+    container_name: label-studio
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./data:/label-studio/data
+    stdin_open: true   # equivalente a -it
+    environment:
+      - LABEL_STUDIO_USERNAME=admin
+      - LABEL_STUDIO_PASSWORD=admin
+      - LABEL_STUDIO_EMAIL=admin@local.com
+    tty: true
+    restart: unless-stopped
