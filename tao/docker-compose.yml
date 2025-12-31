@@ -1,8 +1,10 @@
 services:
   tao_pyt:
-    image: nvcr.io/nvidia/tao/tao-toolkit:5.5.0-pyt
-    container_name: tao_pyt5.5
+    image: nvcr.io/nvidia/tao/tao-toolkit:6.25.10-pyt
+    container_name: tao_pyt
     runtime: nvidia
+    ports:
+      - 8888:8888
     deploy:
       resources:
         reservations:

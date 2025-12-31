@@ -1,2 +1,3 @@
 video_data/
-label_studio/data
+label_studio/data/
+tao/apps/sample/results/isbi_experiment/train/

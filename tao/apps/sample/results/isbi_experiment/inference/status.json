@@ -1,0 +1,3 @@
+{"date": "12/31/2025", "time": "16:19:31", "status": "STARTED", "verbosity": "INFO", "message": "Starting SegFormer inference."}
+{"date": "12/31/2025", "time": "16:19:31", "status": "RUNNING", "verbosity": "INFO", "message": "Loading checkpoint: ./results/isbi_experiment/train/segformer_model_latest.pth"}
+{"date": "12/31/2025", "time": "16:19:34", "status": "RUNNING", "verbosity": "INFO", "message": "Inference finished successfully."}

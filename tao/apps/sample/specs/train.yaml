@@ -1,0 +1,54 @@
+encryption_key: tlt_encode
+train:
+  resume_training_checkpoint_path: null
+  segment:
+    loss: "ce"
+  num_epochs: 300
+  num_nodes: 1
+  validation_interval: 1
+  checkpoint_interval: 300
+  optim:
+    lr: 0.0001
+    optim: "adamw"
+    policy: "linear"
+    weight_decay: 0.0005
+results_dir: ./results/isbi_experiment
+model:
+  backbone:
+    type: "mit_b2"
+    pretrained_backbone_path: null
+    freeze_backbone: False
+  decode_head:
+    feature_strides: [4, 8, 16, 32]
+dataset:
+  segment:
+    dataset: "SFDataset"
+    root_dir: ./data/dataset
+    label_transform: None
+    batch_size: 4
+    workers: 4
+    num_classes: 2
+    img_size: 224
+    train_split: "train"
+    validation_split: "val"
+    test_split: 'test'
+    predict_split: 'test'
+    augmentation:
+      random_flip:
+        vflip_probability: 0.5
+        hflip_probability: 0.5
+        enable: True
+      random_rotate:
+        rotate_probability: 0.5
+        angle_list: [90, 180, 270]
+        enable: True
+      random_color:
+        brightness: 0.3
+        contrast: 0.3
+        saturation: 0.3
+        hue: 0.3
+        enable: False
+      with_scale_random_crop:
+        enable: True
+      with_random_crop: True
+      with_random_blur: False

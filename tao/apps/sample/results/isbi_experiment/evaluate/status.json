@@ -1,0 +1,4 @@
+{"date": "12/31/2025", "time": "16:19:8", "status": "STARTED", "verbosity": "INFO", "message": "Starting Segformer evaluate."}
+{"date": "12/31/2025", "time": "16:19:8", "status": "RUNNING", "verbosity": "INFO", "message": "Loading checkpoint: ./results/isbi_experiment/train/segformer_model_latest.pth"}
+{"date": "12/31/2025", "time": "16:19:10", "status": "RUNNING", "verbosity": "INFO", "message": "Test metrics generated.", "kpi": {"test_acc": 0.9569203853607178, "test_miou": 0.4784601926803589, "test_mf1": 0.9779860377311707, "test_mprecision": 0.5, "test_mrecall": 0.9569203853607178}}
+{"date": "12/31/2025", "time": "16:19:10", "status": "RUNNING", "verbosity": "INFO", "message": "Evaluate finished successfully.", "kpi": {"test_acc": 0.9569203853607178, "test_miou": 0.4784601926803589, "test_mf1": 0.9779860377311707, "test_mprecision": 0.5, "test_mrecall": 0.9569203853607178}}
