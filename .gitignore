@@ -10,5 +10,6 @@ deepstream/**/*.onnx
 deepstream/**/*.onxx
 deepstream/**/*.mp4
 deepstream/**/*.bin
+deepstream/**/*.onnx_b1_gpu0_fp16.engine
 tao/**/*.onnx
 tao/**/*.pth
