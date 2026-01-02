@@ -1,3 +1,5 @@
 video_data/
 label_studio/data/
 tao/apps/sample/results/isbi_experiment/train/
+tao/apps/sample/data/
+deepstream/apps/tao-apps/
