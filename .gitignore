@@ -13,3 +13,10 @@ deepstream/**/*.bin
 deepstream/**/*.onnx_b1_gpu0_fp16.engine
 tao/**/*.onnx
 tao/**/*.pth
+**/.venv/
+**/venv/
+**/env/
+**/.env/
+**/__pycache__/
+**/*.pyc
+Explicación:
