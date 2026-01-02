@@ -1,0 +1,42 @@
+
+source-list:
+  list: file:////opt/nvidia/deepstream/deepstream-7.1/apps/tao-segmentation-app/chunks/chunk_001.mp4
+
+streammux:
+  batch-size: 1
+  width: 512    
+  height: 512
+  batched-push-timeout: 40000
+
+
+# PGIE: tu SegFormer
+primary-gie:
+  plugin-type: 0
+  config-file-path: ../configs/citysemsegformer_tao/pgie_citysemsegformer_tao_config.yml
+  gie-unique-id: 1
+
+
+segvisual:
+  gpu-id: 0
+  width: 128     # Debe ser igual al streammux para evitar el desfase
+  height: 128    # Debe ser igual al streammux para evitar el desfase
+  input-entity-id: 2
+  orig_background: 1
+  alpha: 0.5
+
+
+eglsink:
+  enable: 1
+  width: 854
+  height: 480
+
+filesink:
+  enable: 0
+  #encoder type 0=Hardware 1=Software
+  enc-type: 0
+
+fakesink:
+  enable: 0
+
+tests:
+  file-loop: 0

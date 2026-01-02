@@ -1,0 +1,44 @@
+[application]
+enable-perf-measurement=1
+perf-measurement-interval-sec=1
+
+[tiled-display]
+enable=1
+rows=1
+columns=1
+width=854
+height=480
+
+[source0]
+enable=1
+type=2
+uri=file:///opt/nvidia/deepstream/deepstream-7.1/apps/ds-app-segformer/chunks/chunk_002.mp4
+num-sources=1
+
+[streammux]
+width=854
+height=480
+batch-size=1
+batched-push-timeout=40000
+
+
+[primary-gie]
+enable=1
+gie-unique-id=1
+config-file=citysemsegformer_tao/pgie_citysemsegformer_tao_config.txt
+
+
+[segvisual]
+enable=1
+gpu-id=0
+width=854   # igual que streammux
+height=480  # igual que streammux
+orig-background=1
+alpha=0.5  # transparencia real visible
+
+
+
+[sink0]
+enable=1
+type=2
+sync=1

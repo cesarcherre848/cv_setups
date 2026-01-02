@@ -28,7 +28,7 @@ dataset:
     batch_size: 4
     workers: 4
     num_classes: 2
-    img_size: 224
+    img_size: 512
     train_split: "train"
     validation_split: "val"
     test_split: 'test'

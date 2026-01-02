@@ -43,7 +43,7 @@ dataset:
     root_dir: ./data/dataset
     dataset: SFDataset
     num_classes: 2
-    img_size: 224
+    img_size: 512
     batch_size: 4
     workers: 4
     shuffle: true
@@ -150,7 +150,7 @@ inference:
   gpu_ids:
   - 0
   num_nodes: 1
-  checkpoint: ./result/isbi_experiment/segformer_model_latest.pth
+  checkpoint: ./results/isbi_experiment/train/segformer_model_latest.pth
   trt_engine: null
   results_dir: null
   batch_size: -1

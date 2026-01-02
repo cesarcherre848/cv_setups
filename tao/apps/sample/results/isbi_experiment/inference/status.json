@@ -1,3 +1,9 @@
-{"date": "12/31/2025", "time": "16:19:31", "status": "STARTED", "verbosity": "INFO", "message": "Starting SegFormer inference."}
-{"date": "12/31/2025", "time": "16:19:31", "status": "RUNNING", "verbosity": "INFO", "message": "Loading checkpoint: ./results/isbi_experiment/train/segformer_model_latest.pth"}
-{"date": "12/31/2025", "time": "16:19:34", "status": "RUNNING", "verbosity": "INFO", "message": "Inference finished successfully."}
+{"date": "12/31/2025", "time": "21:24:51", "status": "STARTED", "verbosity": "INFO", "message": "Starting SegFormer inference."}
+{"date": "12/31/2025", "time": "21:24:51", "status": "RUNNING", "verbosity": "INFO", "message": "Loading checkpoint: ./result/isbi_experiment/segformer_model_latest.pth"}
+{"date": "12/31/2025", "time": "21:24:51", "status": "FAILURE", "verbosity": "INFO", "message": "File system error: [Errno 2] No such file or directory: '/apps/sample/result/isbi_experiment/segformer_model_latest.pth'"}
+{"date": "12/31/2025", "time": "21:25:54", "status": "STARTED", "verbosity": "INFO", "message": "Starting SegFormer inference."}
+{"date": "12/31/2025", "time": "21:25:54", "status": "RUNNING", "verbosity": "INFO", "message": "Loading checkpoint: ./result/isbi_experiment/train/segformer_model_latest.pth"}
+{"date": "12/31/2025", "time": "21:25:54", "status": "FAILURE", "verbosity": "INFO", "message": "File system error: [Errno 2] No such file or directory: '/apps/sample/result/isbi_experiment/train/segformer_model_latest.pth'"}
+{"date": "12/31/2025", "time": "21:28:15", "status": "STARTED", "verbosity": "INFO", "message": "Starting SegFormer inference."}
+{"date": "12/31/2025", "time": "21:28:15", "status": "RUNNING", "verbosity": "INFO", "message": "Loading checkpoint: ./results/isbi_experiment/train/segformer_model_latest.pth"}
+{"date": "12/31/2025", "time": "21:28:33", "status": "RUNNING", "verbosity": "INFO", "message": "Inference finished successfully."}

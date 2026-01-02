@@ -3,6 +3,7 @@ services:
     image: nvcr.io/nvidia/tao/tao-toolkit:6.25.10-pyt
     container_name: tao_pyt
     runtime: nvidia
+    shm_size: 8gb
     ports:
       - 8888:8888
     deploy:
