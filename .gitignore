@@ -1,7 +1,14 @@
 video_data/
 label_studio/data/
 tao/apps/sample/results/isbi_experiment/train/
+tao/apps/sample/results/isbi_experiment/inference/
+tao/apps/sample/results/isbi_experiment/evaluate/
 tao/apps/sample/data/
 deepstream/apps/tao-apps/
 deepstream/**/*.engine
 deepstream/**/*.onnx
+deepstream/**/*.onxx
+deepstream/**/*.mp4
+deepstream/**/*.bin
+tao/**/*.onnx
+tao/**/*.pth
